@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "c763274d-02bb-4a5d-bba4-4dba4fb9a7a4",
+		"name": "Website Crawler",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Testing",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5050",
+					"host": [
+						"localhost"
+					],
+					"port": "5050"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Reviews",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"url\": \"https://www.tigerdirect.com/applications/SearchTools/item-details.asp?EdpNo=640254&CatId=3\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5050/getReviews",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"getReviews"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,1 @@
+exports.rvs_getRevSuc = (reviews) => `Get reviews successful - reviews: ${JSON.stringify(reviews)}`;
